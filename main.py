@@ -17,7 +17,7 @@ backends = [
 while True:
     ret, frame = cap.read()
     try:
-        result = DeepFace.analyze(frame, actions=['emotion'], detector_backend=backends[4])
+        result = DeepFace.analyze(frame, actions=['emotion'], detector_backend="opencv")
     except ValueError:
         pass
 
